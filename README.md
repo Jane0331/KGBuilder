@@ -12,6 +12,7 @@ To train your own model, you need to do 3 steps.
 ./dic2embed.py --dicpath ./ --train train.txt --dev dev.txt --test test.txt --output embed.txt
 ```
 This script generates word embeddings through our KBE method. All of your dictionaries should be put in the same folder with the extension ".dic", and follow the format: each mention is on a separate line. Just put mentions having more than one words, like "bacillus coli", on one line.
+
 The training, development and testing set have to follow the format: each word is on a separate line, and there is an empty line after each sentence. A line must contain at least 2 columns, the first one being the word itself, the second one being the named entity. Tags have to be given in the IOB format.
 
 [STEP2] Use the ./NER/train.py script and provide the location of the training, development and testing set:
