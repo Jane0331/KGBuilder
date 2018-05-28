@@ -29,13 +29,11 @@ The training script will automatically give a name to the model and store it in 
 
 Use the ./RE/train.py script...
 
-The training script will automatically give a name to the model and store it in ./RE/models/.
-
 There are many parameters you can tune (CRF, dropout rate, embedding dimension, LSTM hidden layer size, etc). To see all parameters, simply run the above three scripts with "--help".
 
 ## Build Graph
-The fastest way to use the tagger is to use one of the pretrained models:
+Use the ./build.sh script and provide the location of the input, output file and the models of NER and RE:
 ```
-./tagger.py --model models/english/ --input input.txt --output output.txt
+./build.sh input.txt output.txt ./NER/models/mymodel/ ./RE/models/mymodel/
 ```
 The input file should contain one sentence by line, and they have to be tokenized. Otherwise, the tagger will perform poorly.
