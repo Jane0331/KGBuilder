@@ -17,7 +17,7 @@ This script generates word embeddings through our KBE method. All of your dictio
 
 The training, development and testing set have to follow the format: each word is on a separate line, and there is an empty line after each sentence. A line must contain at least 2 columns, the first one being the word itself, the second one being the named entity. Tags have to be given in the IOB format.
 
-[STEP2] Train NER models 
+[STEP2] Train NER model
 
 Use the ./NER/train.py script and provide the location of the training, development and testing set:
 ```
@@ -25,7 +25,7 @@ Use the ./NER/train.py script and provide the location of the training, developm
 ```
 The training script will automatically give a name to the model and store it in ./NER/models/.
 
-[STEP3] Train RE models
+[STEP3] Train RE model
 
 Use the ./RE/train.py script...
 
