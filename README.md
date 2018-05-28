@@ -1,4 +1,4 @@
-## KGBuilder
+### KGBuilder
 KGBuilder is an implementation of a scientific domain knowledge graph builder. It combines domain knowledge with neural networks to overcome the difficulities of in-domain knowledge graph construction, and finally obtains state-of-the-art performance in its subtasks, namely named entity recognition and relation extraction. Details about the tool can be found at: http://
 
 ## Initial setup
@@ -6,6 +6,7 @@ To use the tool, you need Python 2.7, with Numpy, Theano and TensorFlow installe
 
 ## Train models
 To train your own model, you need to do 3 steps.
+#Generate embeddings
 [STEP1] Use the ./NER/dic2embed.py script and provide the location of all dictionaries, and the training, development and testing set.
 ```
 ./dic2embed.py --dicpath ./ --train train.txt --dev dev.txt --test test.txt --output embed.txt
