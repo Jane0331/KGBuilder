@@ -6,6 +6,7 @@ To use the tool, you need Python 2.7, with Numpy, Theano and TensorFlow installe
 
 ## Train models
 To train your own model, you need to do 3 steps.
+
 [STEP1] Use the ./NER/dic2embed.py script and provide the location of all dictionaries, and the training, development and testing set.
 ```
 ./dic2embed.py --dicpath ./ --train train.txt --dev dev.txt --test test.txt --output embed.txt
